@@ -1,0 +1,43 @@
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  padding: 3vh 4vw;
+  border-radius: 0.5rem;
+
+  height: 80vh;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8vh;
+}
+
+.header {
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  color: #636363;
+}
+
+.info {
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  color: #20a4da;
+}

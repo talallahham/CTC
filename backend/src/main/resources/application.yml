@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      authentication-database: CTC_DB
+      database: CTC_DB
+      port: 27017
+      host: localhost
+
+  security:
+    user:
+      name: ctc_system
+      password: ctc_system_api_password_2024_admin

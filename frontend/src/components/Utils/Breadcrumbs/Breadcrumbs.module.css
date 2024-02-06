@@ -1,0 +1,41 @@
+.breadcrumbs-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5vh;
+  margin: 3vh 3vw;
+  margin-top: 0;
+}
+
+.breadcrumbs-section h1 {
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: #20a4da;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.crumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0.5vh 1vw;
+  margin-bottom: 2vh;
+  gap: 0.5vw;
+}
+
+.crumb a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  letter-spacing: 0.3rem;
+  color: #000;
+  cursor: pointer;
+  transition: all 340ms ease;
+}
+
+.crumb a:hover {
+  color: #20a4da;
+}

@@ -1,0 +1,211 @@
+.tmlist-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  gap: 5vh;
+}
+
+.tmlist-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tmlist-header {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.form {
+  background-color: #20a4da;
+  padding: 2vh 3vw;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.3);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vh;
+}
+
+.addform-input {
+  width: 90%;
+  padding: 2vh 1vw;
+  border: none;
+  border-radius: 0.5rem;
+  letter-spacing: 0.3rem;
+  font-size: 1.3rem;
+  color: #000;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+  outline: none;
+  font-weight: 300;
+  background-color: #fff;
+}
+
+.form div {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addbtn-f,
+.cancelbtn-f {
+  text-transform: uppercase;
+  border: none;
+  padding: 2vh 1vw;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 300;
+  transition: all 450ms ease;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+.addbtn-f:hover {
+  background-color: rgb(0, 180, 0);
+  color: #fff;
+}
+
+.cancelbtn-f:hover {
+  background-color: rgb(220, 0, 0);
+  color: #fff;
+}
+
+.list {
+  width: 150%;
+
+  height: 50vh;
+  overflow: none;
+  overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+  background-color: #fff;
+  width: 0.3vw;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #20a4da;
+}
+
+.list-item {
+  width: 90%;
+
+  margin: 2vh auto;
+
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+  padding: 2vh 1vw;
+
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+
+  list-style: none;
+}
+
+.list-item p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+
+.list-item div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+}
+
+.delete-btn,
+.edit-btn,
+.add-btn {
+  padding: 2vh 2vw;
+
+  border: none;
+  background-color: #20a4da;
+  color: #fff;
+
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+
+  cursor: pointer;
+  transition: all 400ms ease;
+
+  text-transform: uppercase;
+}
+
+.add-btn:hover {
+  background-color: rgb(0, 180, 0);
+}
+
+.delete-btn:hover {
+  background-color: rgb(220, 0, 0);
+}
+
+.edit-btn:hover {
+  background-color: #fff;
+  color: #20a4da;
+}
+
+.err-class::placeholder {
+  color: #fff;
+}
+
+.err-class {
+  color: #fff;
+  background-color: rgb(220, 0, 0);
+}
+
+.err-msg {
+  color: rgb(220, 0, 0);
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.empty-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(253, 45, 45);
+  color: #fff;
+
+  width: fit-content;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 3vh 4vw;
+
+  box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+
+  font-size: 2rem;
+
+  letter-spacing: 0.3rem;
+}

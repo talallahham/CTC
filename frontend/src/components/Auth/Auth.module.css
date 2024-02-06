@@ -1,0 +1,125 @@
+.login-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+
+  width: 60vw;
+  height: 80vh;
+
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+
+  box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  padding: 3% 2%;
+  border-radius: 3.5%;
+}
+
+.login-header {
+  font-size: 250%;
+  text-align: center;
+  color: #175f91;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+.input-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+}
+
+.input {
+  border: none;
+  outline: none;
+
+  background-color: #175f91;
+  padding: 3% 6%;
+
+  width: 100%;
+
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+
+  font-size: 150%;
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+
+  color: #fff;
+}
+
+.input::placeholder {
+  color: #fff;
+  font-weight: 200;
+  font-size: 90%;
+}
+
+.login-btn {
+  border: none;
+  padding: 3% 3%;
+  background-color: #175f91;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 1.5rem;
+  color: #fff;
+
+  font-size: 150%;
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.login-btn:hover {
+  background-color: #fff;
+  color: #175f91;
+}
+
+.err-text {
+  color: rgb(250, 60, 60);
+  font-size: 150%;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.err {
+  background-color: rgb(250, 60, 60);
+}
+
+.err::placeholder {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  .login-card {
+    width: 96vw;
+    height: 96vh;
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .input {
+    font-size: 5vw;
+  }
+}

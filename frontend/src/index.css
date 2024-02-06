@@ -1,0 +1,267 @@
+/* Cairo - Arabic */
+/* Montserrat - English */
+/* Edu TAS Beginner - English */
+/* Roboto - English */
+/* Poppins - English */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Edu+TAS+Beginner:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+/* https://coolors.co/175f91-20a4da-000000-ffffff-636363 */
+
+/* GLOBAL STYELS */
+.flex-col-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 2vh 3vw;
+
+  gap: 3.5vh;
+}
+
+.flex-row-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 2vh 3vw;
+
+  gap: 2.5vw;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 2vh 1vw;
+
+  gap: 0.8vh;
+}
+
+.label {
+  color: #636363;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.value {
+  color: #20a4da;
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #fff;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+
+  padding: 2vh 2vw;
+
+  border: #fff;
+
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #20a4da;
+
+  letter-spacing: 0.3rem;
+
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #20a4da;
+}
+
+.careful-btn:hover {
+  color: #fff;
+  background-color: rgb(250, 60, 60);
+}
+
+.ok-btn:hover {
+  color: #fff;
+  background-color: rgb(20, 155, 35);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.5vh;
+}
+
+.input {
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  color: #20a4da;
+  padding: 2vh 2vw;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.input::placeholder {
+  color: #636363;
+  font-weight: 200;
+}
+
+.menu {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  color: #fff;
+
+  padding: 2vh 2vw;
+
+  background-color: #20a4da;
+  border: 0.1rem solid #fff;
+  border-radius: 0.9rem;
+
+  box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.menu:hover {
+  scale: 0.9;
+}
+
+.menu-options {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #20a4da;
+  top: 9vh;
+
+  border-radius: 0.9rem;
+  box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.menu-options li {
+  background-color: #fff;
+  width: 90%;
+  text-align: center;
+  margin: 1vh 1vw;
+  padding: 1vh 1vw;
+
+  color: #20a4da;
+  box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.5vw;
+
+  letter-spacing: 0.2rem;
+
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.menu-options li:hover {
+  background-color: #20a4da;
+  color: #fff;
+}
+
+.disabled:hover {
+  background-color: rgb(250, 60, 60);
+  cursor: not-allowed;
+  scale: 1;
+}
+
+.err {
+  background-color: rgb(250, 60, 60);
+  color: #fff;
+}
+
+.err::placeholder {
+  color: #fff;
+}
+
+.err-text {
+  color: rgb(250, 60, 60);
+  font-size: 1rem;
+  letter-spacing: 0rem;
+  text-align: center;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2vh;
+
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  color: #20a4da;
+  font-weight: 400;
+  text-align: center;
+}
+
+.desc {
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.white-box {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.4rem 0.3rem rgba(0, 0, 0, 0.3);
+  padding: 2vh 3vw;
+}
+
+.fill-width {
+  width: 100%;
+}
+
+.fit-content {
+  width: fit-content;
+}

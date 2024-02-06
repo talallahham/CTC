@@ -1,0 +1,62 @@
+.note-box {
+  background-color: #fff;
+  box-shadow: 0 0.4rem 0.3rem rgba(0, 0, 0, 0.2);
+  padding: 2vh 3vw;
+}
+
+.edit-user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+  justify-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15vw;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #fff;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+
+  padding: 2vh 2vw;
+
+  border: #fff;
+
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #20a4da;
+
+  letter-spacing: 0.3rem;
+
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: rgb(250, 60, 60);
+}

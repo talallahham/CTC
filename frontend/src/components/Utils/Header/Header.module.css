@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+
+.center-logo,
+.user-icon {
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.center-logo {
+  width: 10rem;
+}
+
+.user-icon {
+  width: 4rem;
+}
+
+.center-logo:hover,
+.user-icon:hover {
+  scale: 0.9;
+}

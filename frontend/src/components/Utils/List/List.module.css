@@ -1,0 +1,190 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  justify-items: stretch;
+  align-items: stretch;
+
+  row-gap: 3vh;
+  column-gap: 3vw;
+
+  margin-bottom: 5vh;
+}
+
+.menu {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 1vw;
+  gap: 3vw;
+
+  border: none;
+
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+
+  background-color: #175f91;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.menu:hover {
+  scale: 0.95;
+}
+
+.menu-options {
+  width: 150%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background-color: #175f91;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+
+  top: 8vh;
+  left: -4.5vw;
+}
+
+.menu-options li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+  margin: 0.5vh 0.3vw;
+  text-align: center;
+  padding: 0.8vh 0.4vw;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+
+  cursor: pointer;
+  transition: all 400ms ease;
+  z-index: 2;
+}
+
+.menu-options li:hover {
+  background-color: #175f91;
+  color: #fff;
+}
+
+.input {
+  width: 100%;
+
+  outline: none;
+  border: none;
+
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+
+  background-color: #fff;
+  border-radius: 0.3rem;
+  padding: 2vh 1vw;
+
+  color: #175f91;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.input::placeholder {
+  font-weight: 200;
+}
+
+.list-card {
+  margin-top: 2vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3vh;
+
+  position: relative;
+
+  height: 50vh;
+  overflow: none;
+  overflow-y: scroll;
+}
+
+.list-card::-webkit-scrollbar {
+  background-color: #fff;
+  width: 0.3vw;
+}
+
+.list-card::-webkit-scrollbar-thumb {
+  background-color: #175f91;
+  width: 1vw;
+}
+
+.not-active-item,
+.active-item {
+  margin: 0 3vw;
+  list-style: none;
+
+  background-color: #fff;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  padding: 2vh 1vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15vw;
+
+  cursor: pointer;
+  transition: all 500ms ease;
+
+  position: relative;
+}
+
+.not-active-item:last-child,
+.active-item:last-child {
+  margin-bottom: 5vh;
+}
+
+.not-active-item:hover {
+  scale: 0.95;
+}
+
+.records {
+  font-weight: 500;
+  letter-spacing: 0.2vw;
+  color: #175f91;
+}
+
+.records span {
+  color: #636363;
+  font-weight: 300;
+}
+
+.empty-list {
+  background-color: rgb(250, 60, 60);
+  padding: 2vw;
+
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+
+  text-align: center;
+}
